@@ -64,7 +64,7 @@ public class DFS implements Runnable{
             return true;
         }
 
-        //Check up of standing
+        //verificar si se puede mover a la izquierda
         Point aux = new Point();
         aux.x = standing.x - 1;
         aux.y = standing.y;
@@ -76,7 +76,7 @@ public class DFS implements Runnable{
             checker();
         }
 
-        //Check rigth of standing
+        //verificar si se puede mover a la derecha
         aux = new Point();
         aux.x = standing.x;
         aux.y = standing.y + 1;
@@ -88,7 +88,7 @@ public class DFS implements Runnable{
             checker();
         }
 
-        //Check down of standing
+        //verificar si se puede mover hacia abajo
         aux = new Point();
         aux.x = standing.x + 1;
         aux.y = standing.y;
@@ -100,7 +100,7 @@ public class DFS implements Runnable{
             checker();
         }
 
-        //Check left of standing
+        //verificar si se puede mover hacia arriba
         aux = new Point();
         aux.x = standing.x;
         aux.y = standing.y - 1;
